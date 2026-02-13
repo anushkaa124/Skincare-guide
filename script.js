@@ -16,3 +16,22 @@ function showRoutine(type, btn) {
   btn.classList.add("active");
 }
 
+
+function toggleFAQ(element) {
+
+  const item = element.parentElement;
+
+  // close all
+  document.querySelectorAll(".faq-item").forEach(faq => {
+    if (faq !== item) {
+      faq.classList.remove("active");
+      faq.querySelector(".faq-icon").textContent = "+";
+    }
+  });
+
+  // toggle current
+  item.classList.toggle("active");
+
+  const icon = item.querySelector(".faq-icon");
+  icon.textContent = item.classList.contains("active") ? "−" : "+";
+}
