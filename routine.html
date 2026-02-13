@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style5.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+      <div class="Container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">GlowGuide</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item ">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+         <li class="nav-item ">
+          <a class="nav-link" href="basics.html">Basics</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="skin_type.html">Skin Type</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="routine.html">Routine</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Solutions</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Ingredients</a>
+        </li>
+         <li class="nav-item ">
+          <a class="nav-link" href="Faq.html">FAQ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+            </div>
+        </div>
+    </div>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Daily Routine</h1>
+        <p>
+          Tailored routines designed specifically for your unique skin needs.
+        </p>
+      </div>
+      </section>
+     <section class="routine-section">
+
+  <!-- TABS -->
+  <div class="skin-tabs">
+    <button class="tab active" onclick="showRoutine('normal', this)">Normal</button>
+    <button class="tab" onclick="showRoutine('oily', this)">Oily</button>
+    <button class="tab" onclick="showRoutine('dry', this)">Dry</button>
+    <button class="tab" onclick="showRoutine('combination', this)">Combination</button>
+    <button class="tab" onclick="showRoutine('sensitive', this)">Sensitive</button>
+  </div>
+
+  <!-- NORMAL -->
+  <div class="routine-content active" id="normal">
+    <div class="routine-info">
+      <h3>✨ Normal Skin Routine</h3>
+      <p>Balanced skin that needs gentle maintenance.</p>
+    </div>
+
+    <div class="routine-cards">
+      <div class="routine-card morning">
+        <h4>🌅 Morning</h4>
+        <ul>
+          <li><span>1</span><b>Gentle Cleanser</b>Removes impurities.</li>
+          <li><span>2</span><b>Toner</b>Preps skin.</li>
+          <li><span>3</span><b>Moisturizer</b>Locks hydration.</li>
+          <li><span>4</span><b>Sunscreen</b>UV protection.</li>
+        </ul>
+      </div>
+
+      <div class="routine-card evening">
+        <h4>🌙 Evening</h4>
+        <ul>
+          <li><span>1</span><b>Cleanser</b>Removes dirt.</li>
+          <li><span>2</span><b>Serum</b>Repairs skin.</li>
+          <li><span>3</span><b>Night Cream</b>Nourishes overnight.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- OILY -->
+  <div class="routine-content" id="oily">
+    <div class="routine-info">
+      <h3>✨ Oily Skin Routine</h3>
+      <p>Oily skin produces excess sebum. Use lightweight, non-comedogenic products and oil-control ingredients like niacinamide and salicylic acid.</p>
+    </div>
+
+    <div class="routine-cards">
+      <div class="routine-card morning">
+        <h4>🌅 Morning</h4>
+        <ul>
+          <li><span>1</span><b>Gel Cleanser</b>Deep cleans pores.</li>
+          <li><span>2</span><b>Astringent Toner</b>Helps control oil..</li>
+          <li><span>3</span><b>Lightweight Serum</b>Niacinamide helps regulate sebum.</li>
+          <li><span>4</span><b>Oil-Free Moisturizer</b>Hydrates without clogging.</li>
+          <li><span>5</span><b>Matte SPF Sunscreen</b>Protection without the shine.</li>
+        </ul>
+      </div>
+
+      <div class="routine-card evening">
+        <h4>🌙 Evening</h4>
+        <ul>
+          <li><span>1</span><b>Gel Cleanser</b>Removes excess oil and debris.</li>
+          <li><span>2</span><b>Oil-Control Serum</b>Exfoliates inside pores.</li>
+          <li><span>3</span><b>Lightweight Night Gel</b>Hydrates without heaviness.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="routine-content" id="dry">
+    <div class="routine-info">
+      <h3>✨Dry Skin Routine</h3>
+      <p>Dry skin lacks moisture and natural oils. Prioritize hydration with hyaluronic acid, ceramides, and rich creams to restore the skin barrier.</p>
+    </div>
+
+    <div class="routine-cards">
+      <div class="routine-card morning">
+        <h4>🌅 Morning</h4>
+        <ul>
+          <li><span>1</span><b>Creamy Cleanser</b>Cleanses while preserving oils.</li>
+          <li><span>2</span><b>Hydrating Toner</b>First layer of hydration.</li>
+          <li><span>3</span><b>Rich Serum</b>Hyaluronic Acid for deep moisture.</li>
+          <li><span>4</span><b>Rich Moisturizer</b>Creamy formula to lock it in.</li>
+           <li><span>5</span><b>SPF 30+ Sunscreen</b>Essential daily protection..</li>
+        </ul>
+      </div>
+
+      <div class="routine-card evening">
+        <h4>🌙 Evening</h4>
+        <ul>
+          <li><span>1</span><b>Creamy Cleanser</b>Gentle and nourishing wash.</li>
+          <li><span>2</span><b>Hydrating Essence</b>Preps skin for heavy creams.</li>
+          <li><span>3</span><b>Rich Night Cream</b>Intensive overnight repair.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="routine-content" id="combination">
+    <div class="routine-info">
+      <h3>✨Combination Skin Routine</h3>
+      <p>Combination skin has different needs in different zones. Use lightweight products overall and apply richer moisturizer only to dry areas.</p>
+    </div>
+
+    <div class="routine-cards">
+      <div class="routine-card morning">
+        <h4>🌅 Morning</h4>
+        <ul>
+          <li><span>1</span><b>Balanced Cleanser</b>Effective but gentle.</li>
+          <li><span>2</span><b>Gentle Toner</b>Balances pH levels.</li>
+          <li><span>3</span><b>Lightweight Serum</b>Hydrates without grease.</li>
+          <li><span>4</span><b> Moisturizer</b>Hydrates both oily and dry zones.</li>
+           <li><span>5</span><b>SPF 30+ Sunscreen</b>Protects all zones.</li>
+        </ul>
+      </div>
+
+      <div class="routine-card evening">
+        <h4>🌙 Evening</h4>
+        <ul>
+          <li><span>1</span><b>Balanced Cleanser</b>Removes makeup and grime.</li>
+          <li><span>2</span><b>Balancing Serum</b>Targets uneven texture.</li>
+          <li><span>3</span><b>Lightweight Moisturizer</b>Restores balance overnight.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="routine-content" id="sensitive">
+    <div class="routine-info">
+      <h3>✨Sensitive Skin Routine</h3>
+      <p>Sensitive skin is reactive and easily irritated. Use minimal, gentle products with soothing ingredients like centella asiatica and avoid fragrance and alcohol.
+</p>
+    </div>
+
+    <div class="routine-cards">
+      <div class="routine-card morning">
+        <h4>🌅 Morning</h4>
+        <ul>
+          <li><span>1</span><b>Gentle Milk Cleanser</b>Soothing and non-stripping.</li>
+          <li><span>2</span><b>Soothing Toner</b>Alcohol-free and calming.</li>
+          <li><span>3</span><b>Calming Serum</b>Centella Asiatica to reduce redness.</li>
+          <li><span>4</span><b>Gentle Moisturizer</b>Simple barrier support.</li>
+           <li><span>5</span><b>Mineral SPF 30+</b>Less likely to irritate than chemical filters.</li>
+        </ul>
+      </div>
+
+      <div class="routine-card evening">
+        <h4>🌙 Evening</h4>
+        <ul>
+          <li><span>1</span><b>Gentle Milk Cleanser</b>Softly cleanses sensitive skin.</li>
+          <li><span>2</span><b>Soothing Essence</b>Calms irritation.</li>
+          <li><span>3</span><b>Repairing Night Cream</b>Strengthens skin defenses.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Repeat same pattern for DRY, COMBINATION, SENSITIVE -->
+
+</section>
+<!-- FOOTER NOTE -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Left -->
+    <div class="footer-about">
+      <h3>SkinCare Guide</h3>
+      <p>
+        Your comprehensive resource for understanding skincare.
+        Learn about skin types, concerns, routines, and ingredients
+        to achieve healthy, glowing skin.
+      </p>
+    </div>
+
+    <!-- Middle -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="basics.html">Basics</a>
+      <a href="skin_type.html">Skin Types</a>
+      <a href="#">Concerns</a>
+    </div>
+
+    <!-- Right -->
+    <div class="footer-links">
+      <h4>Resources</h4>
+      <a href="routine.html">Routines</a>
+      <a href="#">Ingredients</a>
+      <a href="Faq.html">FAQ</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 SkinCare Guide. All rights reserved.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
