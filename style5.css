@@ -2,18 +2,20 @@
       font-family: 'Pacifico', cursive;
       font-size: 2.2rem;
       color: #6fa58a;
-    }
+}
 
-    .navbar-nav {
+.navbar-nav {
       font-family: 'Poppins', sans-serif;
-    }
-   .section-title {
+}
+
+    /* Section heading with line */
+.section-title {
       font-family: 'Poppins', sans-serif;
       font-weight: 400;
       color: #444;
       position: relative;
-    }
-    .hero{
+}
+.hero{
         height: 20vh;
   display: flex;
   align-items: center;

@@ -42,18 +42,24 @@
 }
 
 
-/* NAVBAR */
+/* Navbar */
 .navbar-brand {
-  font-family: 'Pacifico', cursive;
-  font-size: 2.3rem;
-  color: #6fa58a;
+      font-family: 'Pacifico', cursive;
+      font-size: 2.2rem;
+      color: #6fa58a;
 }
 
 .navbar-nav {
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
+      font-family: 'Poppins', sans-serif;
 }
 
+    /* Section heading with line */
+.section-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      color: #444;
+      position: relative;
+}
 /* SOFT BOX (INTRO / INFO SECTIONS) */
 .soft-box {
   background: #ffffff;
